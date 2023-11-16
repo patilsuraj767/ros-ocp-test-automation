@@ -56,5 +56,5 @@ def create_source(source_name, cluster_uuid):
 
 
 def delete_source(uuid):
-    url = f"https://console.redhat.com/api/sources/v3.1/sources/{uuid}"
+    url = f"https://{config.DOMAIN}/api/sources/v3.1/sources/{uuid}"
     requests.delete(url, auth=HTTPBasicAuth(config.USERNAME, config.PASSWORD))
