@@ -19,7 +19,7 @@ def test_dry_run(source_uuid):
         utils.upload_to_ingress(data)
         time.sleep(10)
         # get recommendation
-        url = f"https://{config.DOMAIN}/api/cost-management/v1/recommendations/openshift?start_date=2023-04-01&cluster=my-test-source"
+        url = f"https://{config.DOMAIN}/api/cost-management/v1/recommendations/openshift?start_date=2023-04-01&cluster={config.DEFAULT_SOURCE_NAME}"
         res = requests.get(url, auth=HTTPBasicAuth(config.USERNAME, config.PASSWORD))
         assert res.status_code == 200
         

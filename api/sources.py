@@ -3,8 +3,6 @@ import requests
 from lib import config
 from requests.auth import HTTPBasicAuth
 
-source_ref = str(uuid.uuid4())
-source_name = "my-test-source"
 
 def get_cost_application_type_id():
     url = f"https://{config.DOMAIN}/api/sources/v3.1/application_types?filter[name][eq]=/insights/platform/cost-management"
@@ -12,7 +10,7 @@ def get_cost_application_type_id():
     data = res.json()['data']
     return data[0]['id']
 
-def get_source_id_by_name():
+def get_source_id_by_name(source_name):
     url = f"https://{config.DOMAIN}/api/sources/v3.1/sources?filter[name][eq]={source_name}"
     res = requests.get(url, auth=HTTPBasicAuth(config.USERNAME, config.PASSWORD))
     data = res.json()['data']
@@ -21,7 +19,7 @@ def get_source_id_by_name():
     else:
         return 0
 
-def create_source(cluster_uuid):
+def create_source(source_name, cluster_uuid):
 
     source_payload = {
         "sources":[
