@@ -29,7 +29,9 @@ pipeline {
         }
         stage('Test Suite') {
             steps {
-                sh 'poetry run python -m pytest -s tests/test_dry_run.py '
+                sh "/root/.local/bin/poetry install --no-root"
+                sh "/root/.local/bin/poetry run python -m pytest -s tests/test_dry_run.py"
+                sh "poetry env remove --all"
             }
         }
     }
