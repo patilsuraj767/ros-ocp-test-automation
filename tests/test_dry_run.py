@@ -17,7 +17,7 @@ def test_dry_run(source_uuid):
         data = utils.create_archive_with_uuid("samples/test.tar.gz" , source_uuid, tmp_dir)
         time.sleep(10)
         utils.upload_to_ingress(data)
-        time.sleep(10)
+        time.sleep(60)
         # get recommendation
         url = f"https://{config.DOMAIN}/api/cost-management/v1/recommendations/openshift?start_date=2023-04-01&cluster={config.DEFAULT_SOURCE_NAME}"
         res = requests.get(url, auth=HTTPBasicAuth(config.USERNAME, config.PASSWORD))
