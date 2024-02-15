@@ -1,171 +1,179 @@
 {
     "data": [
         {
-            "cluster_alias": "ros-ocp-dev-test",
-            "cluster_uuid": "26899377-2759-4a14-8018-c560b6b1edb0",
+            "cluster_alias": "name222",
+            "cluster_uuid": "222",
             "container": "Yuptoo-service",
-            "id": "f07dc38f-eda4-4b80-83a4-e2583184eb1a",
-            "last_reported": "2023-11-16T11:34:21Z",
+            "id": "f8e66f3a-1bc0-4fb3-940e-ba93d8bd0cc6",
+            "last_reported": "2024-02-15T08:37:51Z",
             "project": "Yuptoo-prod",
             "recommendations": {
-                "duration_based": {
+                "current": {
+                    "limits": {
+                        "cpu": {
+                            "amount": 1,
+                            "format": null
+                        },
+                        "memory": {
+                            "amount": 1,
+                            "format": "Gi"
+                        }
+                    },
+                    "requests": {
+                        "cpu": {
+                            "amount": 1,
+                            "format": null
+                        },
+                        "memory": {
+                            "amount": 1,
+                            "format": "Gi"
+                        }
+                    }
+                },
+                "monitoring_end_time": "2023-06-03T00:45:00Z",
+                "notifications": {
+                    "111101": {
+                        "code": 111101,
+                        "message": "Short Term Recommendations Available",
+                        "type": "info"
+                    }
+                },
+                "recommendation_terms": {
                     "long_term": {
-                        "config": {
-                            "limits": {
-                                "cpu": {},
-                                "memory": {}
-                            },
-                            "requests": {
-                                "cpu": {},
-                                "memory": {}
-                            }
-                        },
-                        "current": {
-                            "limits": {
-                                "cpu": {},
-                                "memory": {}
-                            },
-                            "requests": {
-                                "cpu": {},
-                                "memory": {}
-                            }
-                        },
-                        "monitoring_end_time": "0001-01-01T00:00:00Z",
-                        "monitoring_start_time": "0001-01-01T00:00:00Z",
+                        "duration_in_hours": 24.7,
                         "notifications": {
                             "120001": {
                                 "code": 120001,
                                 "message": "There is not enough data available to generate a recommendation.",
                                 "type": "info"
-                            }
-                        },
-                        "variation": {
-                            "limits": {
-                                "cpu": {},
-                                "memory": {}
-                            },
-                            "requests": {
-                                "cpu": {},
-                                "memory": {}
                             }
                         }
                     },
                     "medium_term": {
-                        "config": {
-                            "limits": {
-                                "cpu": {},
-                                "memory": {}
-                            },
-                            "requests": {
-                                "cpu": {},
-                                "memory": {}
-                            }
-                        },
-                        "current": {
-                            "limits": {
-                                "cpu": {},
-                                "memory": {}
-                            },
-                            "requests": {
-                                "cpu": {},
-                                "memory": {}
-                            }
-                        },
-                        "monitoring_end_time": "0001-01-01T00:00:00Z",
-                        "monitoring_start_time": "0001-01-01T00:00:00Z",
+                        "duration_in_hours": 24.7,
                         "notifications": {
                             "120001": {
                                 "code": 120001,
                                 "message": "There is not enough data available to generate a recommendation.",
                                 "type": "info"
                             }
-                        },
-                        "variation": {
-                            "limits": {
-                                "cpu": {},
-                                "memory": {}
-                            },
-                            "requests": {
-                                "cpu": {},
-                                "memory": {}
-                            }
                         }
                     },
                     "short_term": {
-                        "config": {
-                            "limits": {
-                                "cpu": {
-                                    "amount": 60,
-                                    "format": "millicores"
-                                },
-                                "memory": {
-                                    "amount": 493.99,
-                                    "format": "MiB"
-                                }
-                            },
-                            "requests": {
-                                "cpu": {
-                                    "amount": 60,
-                                    "format": "millicores"
-                                },
-                                "memory": {
-                                    "amount": 493.99,
-                                    "format": "MiB"
-                                }
-                            }
-                        },
-                        "current": {
-                            "limits": {
-                                "cpu": {
-                                    "amount": 1,
-                                    "format": "cores"
-                                },
-                                "memory": {
-                                    "amount": 1,
-                                    "format": "GiB"
-                                }
-                            },
-                            "requests": {
-                                "cpu": {
-                                    "amount": 1,
-                                    "format": "cores"
-                                },
-                                "memory": {
-                                    "amount": 1,
-                                    "format": "GiB"
-                                }
-                            }
-                        },
                         "duration_in_hours": 24,
-                        "monitoring_end_time": "2023-06-03T00:45:00Z",
                         "monitoring_start_time": "2023-06-02T00:30:01Z",
-                        "pods_count": 1,
-                        "variation": {
-                            "limits": {
-                                "cpu": {
-                                    "amount": -940,
-                                    "format": "millicores"
+                        "notifications": {
+                            "112101": {
+                                "code": 112101,
+                                "message": "Cost Recommendations Available",
+                                "type": "info"
+                            },
+                            "112102": {
+                                "code": 112102,
+                                "message": "Performance Recommendations Available",
+                                "type": "info"
+                            }
+                        },
+                        "recommendation_engines": {
+                            "cost": {
+                                "config": {
+                                    "limits": {
+                                        "cpu": {
+                                            "amount": 60,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": 493.99,
+                                            "format": "Mi"
+                                        }
+                                    },
+                                    "requests": {
+                                        "cpu": {
+                                            "amount": 60,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": 493.99,
+                                            "format": "Mi"
+                                        }
+                                    }
                                 },
-                                "memory": {
-                                    "amount": -530,
-                                    "format": "MiB"
+                                "pods_count": 1,
+                                "variation": {
+                                    "limits": {
+                                        "cpu": {
+                                            "amount": -940,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": -530,
+                                            "format": "Mi"
+                                        }
+                                    },
+                                    "requests": {
+                                        "cpu": {
+                                            "amount": -940,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": -530,
+                                            "format": "Mi"
+                                        }
+                                    }
                                 }
                             },
-                            "requests": {
-                                "cpu": {
-                                    "amount": -940,
-                                    "format": "millicores"
+                            "performance": {
+                                "config": {
+                                    "limits": {
+                                        "cpu": {
+                                            "amount": 60,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": 493.99,
+                                            "format": "Mi"
+                                        }
+                                    },
+                                    "requests": {
+                                        "cpu": {
+                                            "amount": 60,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": 493.99,
+                                            "format": "Mi"
+                                        }
+                                    }
                                 },
-                                "memory": {
-                                    "amount": -530,
-                                    "format": "MiB"
+                                "pods_count": 1,
+                                "variation": {
+                                    "limits": {
+                                        "cpu": {
+                                            "amount": -940,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": -530,
+                                            "format": "Mi"
+                                        }
+                                    },
+                                    "requests": {
+                                        "cpu": {
+                                            "amount": -940,
+                                            "format": "m"
+                                        },
+                                        "memory": {
+                                            "amount": -530,
+                                            "format": "Mi"
+                                        }
+                                    }
                                 }
                             }
                         }
                     }
                 }
             },
-            "source_id": "474379",
+            "source_id": "111",
             "workload": "Yuptoo-app",
             "workload_type": "replicaset"
         }
@@ -176,7 +184,7 @@
         "offset": 0
     },
     "links": {
-        "first": "/api/cost-management/v1/recommendations/openshift?cluster=ros-ocp-dev-test&limit=10&offset=0&start_date=2023-04-01",
-        "last": "/api/cost-management/v1/recommendations/openshift?cluster=ros-ocp-dev-test&limit=10&offset=10&start_date=2023-04-01"
+        "first": "/api/cost-management/v1/recommendations/openshift?limit=10&offset=0&start_date=1970-01-01",
+        "last": "/api/cost-management/v1/recommendations/openshift?limit=10&offset=10&start_date=1970-01-01"
     }
 }
